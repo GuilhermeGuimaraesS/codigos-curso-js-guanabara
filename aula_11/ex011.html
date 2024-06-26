@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Digite seu país de nascimento: <input type="text" name="país" id="país">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id = "nationality">
+
+    </div>
+
+    <script>
+        function analisar() {
+            var txt_nation = document.getElementById("país").value
+            var nation_string = String(txt_nation).toUpperCase()
+            var nationality = document.getElementById("nationality")
+            if (nation_string == "BRASIL") {
+                nationality.innerHTML = 'Brasileiro'
+            } else {
+                nationality.innerHTML = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
