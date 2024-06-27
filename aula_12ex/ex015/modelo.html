@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <!-- Formulário de entrada -->
+             <p>Ano de Nascimento: 
+                <input type="number" name="ano_txt" id="ano_nasc_txt" max="2024" min="0">
+             </p>
+             <p>Sexo:
+                <input type="radio" name="radsex" id="homem" checked> 
+                <label for="homem">Masculino</label>
+                <input type="radio" name="radsex" id="mulher">
+                <label for="mulher">Feminino</label>
+             </p>
+             <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+             </p>
+        </div>
+        <div id="result">
+            <!-- Saída -->
+             Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Guilherme Guimarães</p>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
