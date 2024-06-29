@@ -1,22 +1,22 @@
 function contar() {
     // Respostas em string; direto do HTML
-    var numero_1_txt = document.getElementById("inicio")
-    var numero_2_txt = document.getElementById("fim")
-    var passo_txt = document.getElementById("incremento")
+    let numero_1_txt = document.getElementById("inicio")
+    let numero_2_txt = document.getElementById("fim")
+    let passo_txt = document.getElementById("incremento")
 
     // Conversão das respostas de string para numeros
-    var primeiro_numero = Number.parseInt(numero_1_txt.value)
-    var segundo_numero = Number.parseInt(numero_2_txt.value)
-    var passo = Number.parseInt(passo_txt.value)
+    let primeiro_numero = Number.parseInt(numero_1_txt.value)
+    let segundo_numero = Number.parseInt(numero_2_txt.value)
+    let passo = Number.parseInt(passo_txt.value)
 
     // Variáveis que recebem os locais de resposta
-    var resultado = document.getElementById("resultado")
-    var contagem = document.getElementById("contagem")
+    let resultado = document.getElementById("resultado")
+    let contagem = document.getElementById("contagem")
     contagem.innerHTML = '' 
    
     // Site contendo os emojis: https://unicode.org/emoji/charts/full-emoji-list.html#1f605
-    var emoji_apontando = String.fromCodePoint(0x1F449)
-    var emoji_chegada = String.fromCodePoint(0x1F3C1)
+    let emoji_apontando = String.fromCodePoint(0x1F449)
+    let emoji_chegada = String.fromCodePoint(0x1F3C1)
     
     // for (primeiro_numero; primeiro_numero <= segundo_numero; primeiro_numero += passo) {
     //     resultado.innerText += ` ${ primeiro_numero }`
