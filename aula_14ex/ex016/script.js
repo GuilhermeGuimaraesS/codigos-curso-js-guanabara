@@ -31,12 +31,27 @@ function contar() {
         passo = 1
         alert("Valor inválido para o passo! Considerando PASSO = 1")
         resultado.innerHTML = `Contando: `
-        while (primeiro_numero <= segundo_numero) {
-            // alert(primeiro_numero)
-            contagem.innerHTML += ` ${primeiro_numero} ${emoji_apontando}`
-            primeiro_numero += passo
+
+        // Faz a contagem normal com passo = 1
+        if (primeiro_numero < segundo_numero) {
+            while (primeiro_numero <= segundo_numero) {
+                // alert(primeiro_numero)
+                contagem.innerHTML += ` ${primeiro_numero} ${emoji_apontando}`
+                primeiro_numero += passo
+                
+            } contagem.innerHTML += `${emoji_chegada}`
             
-        } contagem.innerHTML += `${emoji_chegada}`
+        // Faz contagem regressiva com passo = 1
+        } else if (segundo_numero < primeiro_numero) {
+            while (segundo_numero <= primeiro_numero) {
+                resultado.innerHTML = `Contando: `
+                // alert(primeiro_numero)
+                contagem.innerHTML += `${primeiro_numero} ${emoji_apontando}`
+                primeiro_numero -= passo
+
+            } contagem.innerHTML += `${emoji_chegada}`
+
+        }
 
     // Faz contagem regressiva
     } else if (segundo_numero < primeiro_numero) {
