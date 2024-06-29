@@ -43,7 +43,7 @@ function contar() {
             primeiro_numero += passo
 
         } contagem.innerHTML += `${emoji_chegada}`
-    }
 
+    }
 
 }
