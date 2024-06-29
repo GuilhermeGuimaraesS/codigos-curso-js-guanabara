@@ -7,6 +7,7 @@ function tabuada() {
 
     if (numero_txt.value.length == 0) {
         alert("Resposta inválida. Digite um número, por favor!")
+        tabuada.innerHTML = ``
 
     } else {
         tabuada.innerHTML = ``
